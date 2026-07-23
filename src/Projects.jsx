@@ -187,7 +187,7 @@ export default function Projects() {
             can help bring your vision to life.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
-            <LinkBtn href="https://calendly.com/buildwithyashx">Book a Free Consultation</LinkBtn>
+            <LinkBtn href="#">Book a Free Consultation</LinkBtn>
             <LinkBtn href="mailto:kalyansai956@gmail.com">Send an Email</LinkBtn>
           </div>
         </section>
