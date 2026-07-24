@@ -187,13 +187,13 @@ export default function Projects() {
             can help bring your vision to life.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
-            <LinkBtn href="#">Book a Free Consultation</LinkBtn>
+            <LinkBtn href="#">Book Free Consultation</LinkBtn>
             <LinkBtn href="mailto:kalyansai956@gmail.com">Send an Email</LinkBtn>
           </div>
         </section>
 
         <footer className="mt-16 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()}  Pasupuleti Sai Kalyan</p>
+          <p>© {new Date().getFullYear()}Pasupuleti Sai Kalyan</p>
           <div className="mt-3 flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/KalyanSai956"
