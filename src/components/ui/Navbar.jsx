@@ -10,16 +10,15 @@ export default function Navbar({ theme, toggle }) {
 
   return (
     <header className="sticky top-0 z-50 bg-background/70 backdrop-blur-xl">
-  <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 lg:px-8">
-
-        {/* Logo */}
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 lg:px-8">
         <Link
           to="/"
-          className="text-xl font-medium tracking-wide text-foreground transition hover:opacity-80"
+          className="group flex items-center text-foreground transition-opacity duration-300 hover:opacity-80"
         >
-          Pasupuleti Sai Kalyan
+          <span className="font-mono text-lg font-medium tracking-wide">
+            &lt; Pasupuleti Sai Kalyan /&gt;
+          </span>
         </Link>
-
         {/* Navigation */}
         <nav className="hidden items-center gap-4 rounded-xl border border-border bg-card/70 px-2 py-2 backdrop-blur-xl md:flex">
           {navItems.map((item) => {
@@ -38,9 +37,9 @@ export default function Navbar({ theme, toggle }) {
                   transition-all
                   duration-300
                   ${
-                active
-  ? "bg-foreground text-background shadow-md"
-  : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    active
+                      ? "bg-foreground text-background shadow-md"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
                   }
                 `}
               >
