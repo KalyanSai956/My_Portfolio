@@ -1,4 +1,4 @@
-import attendAI from "@/assets/projects/attendaI.png";
+import attendAI from "@/assets/projects/attendAI.png";
 // import smartHire from "@/assets/projects/smarthire.png";
 import carePlus from "@/assets/projects/carePlus.png";
 // import gymTrainer from "@/assets/projects/aigymtrainer.png";
