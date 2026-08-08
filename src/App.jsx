@@ -1,6 +1,6 @@
 import attendAI from "@/assets/projects/attendaI.png";
 // import smartHire from "@/assets/projects/smarthire.png";
-import carePlus from "@/assets/projects/careplus.png";
+import carePlus from "@/assets/projects/carePlus.png";
 // import gymTrainer from "@/assets/projects/aigymtrainer.png";
 import profileImg from "@/assets/git.png";
 import { useTheme } from "@/hooks/use-theme";
