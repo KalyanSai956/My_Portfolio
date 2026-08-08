@@ -1,4 +1,4 @@
-import attendAI from "@/assets/projects/attendai.png";
+import attendAI from "@/assets/projects/attendaI.png";
 // import smartHire from "@/assets/projects/smarthire.png";
 import carePlus from "@/assets/projects/careplus.png";
 // import gymTrainer from "@/assets/projects/aigymtrainer.png";
@@ -79,9 +79,7 @@ const projects = [
     github: "https://github.com/yourusername/AIGymTrainer",
     gradient: "from-orange-500/20 via-red-500/10 to-yellow-500/20",
   },
-
 ];
-
 
 function Chip({ children, className = "" }) {
   return (
@@ -94,8 +92,7 @@ function Chip({ children, className = "" }) {
 }
 
 function IconBtn({ href, label, children }) {
-  const isExternal =
-    href.startsWith("http") || href.startsWith("https");
+  const isExternal = href.startsWith("http") || href.startsWith("https");
 
   return (
     <a
@@ -111,8 +108,7 @@ function IconBtn({ href, label, children }) {
 }
 
 function LinkBtn({ href, children }) {
-  const isExternal =
-    href.startsWith("http") || href.startsWith("https");
+  const isExternal = href.startsWith("http") || href.startsWith("https");
 
   return (
     <a
@@ -146,7 +142,9 @@ function App() {
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
-                  <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Pasupuleti Sai Kalyan</h1>
+                  <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                    Pasupuleti Sai Kalyan
+                  </h1>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Full Stack Developer &amp; Software Engineer
                   </p>
@@ -160,11 +158,12 @@ function App() {
           </div>
 
           <p className="text-[15px] leading-relaxed text-muted-foreground">
-            Hi, I'm Pasupuleti Sai Kalyan — a Full-Stack Developer and AI Engineer who has shipped 10+ projects across web
-            apps, AI. I mostly work with{" "}
+            Hi, I'm Pasupuleti Sai Kalyan — a Full-Stack Developer and AI Engineer who has shipped
+            10+ projects across web apps, AI. I mostly work with{" "}
             <InlineTech name="JavaScript" abbr="JS" color="#3178C6" />,{" "}
             <InlineTech name="Python" abbr="Py" color="#3776AB" />,{" "}
-            <InlineTech name="Java" abbr="J" color="#CE422B" />, and whatever gets the job done.Actively contributing to several open-source projects.
+            <InlineTech name="Java" abbr="J" color="#CE422B" />, and whatever gets the job
+            done.Actively contributing to several open-source projects.
           </p>
 
           <div className="flex flex-wrap items-center gap-2">
@@ -289,30 +288,27 @@ hover:border-cyan-400
 hover:bg-zinc-800
 hover:text-white
 "
-style={{
-    borderColor: `#${t.color}55`,
-    backgroundColor: `#${t.color}12`,
-}}
+                style={{
+                  borderColor: `#${t.color}55`,
+                  backgroundColor: `#${t.color}12`,
+                }}
               >
-             <img
-    src={`https://cdn.simpleicons.org/${t.icon}/${t.color}`}
-    className="w-4 h-4"
-/>
+                <img src={`https://cdn.simpleicons.org/${t.icon}/${t.color}`} className="w-4 h-4" />
                 {t.name}
               </span>
             ))}
           </div>
         </Section>
 
-{/* <GithubActivity /> */}
+        {/* <GithubActivity /> */}
 
         {/* Featured Projects */}
         <Section eyebrow="FEATURED PROJECTS" subtitle="Things I've built and shipped.">
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
             {projects.map((p) => (
-           <article
-  key={p.title}
- className="
+              <article
+                key={p.title}
+                className="
   group
   overflow-hidden
   rounded-2xl
@@ -326,20 +322,22 @@ style={{
   hover:border-foreground/20
   hover:shadow-xl
 "
->
+              >
                 <div className="relative aspect-[16/9] overflow-hidden">
-    <img
-        src={p.image}
-        alt={p.title}
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-    />
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
 
-    {/* <div
+                  {/* <div
         className={`absolute inset-0 bg-gradient-to-t ${p.gradient}`}
     /> */}
-</div>
+                </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">{p.title}</h3>
+                  <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    {p.title}
+                  </h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {p.tags.map((t) => (
@@ -385,7 +383,6 @@ hover:border-foreground/30
           </div>
         </Section>
 
-
         {/* CTA */}
         <section className="mt-20 rounded-2xl border border-border bg-card/40 p-8 text-center">
           <span className="text-xs uppercase tracking-widest text-muted-foreground">
@@ -405,8 +402,8 @@ hover:border-foreground/30
           </div>
         </section>
 
-      <footer className="mt-16 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()}  Pasupuleti Sai Kalyan</p>
+        <footer className="mt-16 border-t border-border pt-6 text-center text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} Pasupuleti Sai Kalyan</p>
           <div className="mt-3 flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/KalyanSai956"
