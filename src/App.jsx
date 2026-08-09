@@ -7,6 +7,7 @@ import { useTheme } from "@/hooks/use-theme";
 import GithubActivity from "@/components/ui/GithubActivity";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "@/components/ui/Navbar";
+import SmartHire from "@/assets/projects/SmartHire.jpg";
 const experiences = [
   {
     company: "Projxty",
@@ -54,7 +55,7 @@ const projects = [
   },
   {
     title: "SmartHire ATS",
-    image: attendAI,
+    image: SmartHire,
     desc: "AI-powered Applicant Tracking System that analyzes resumes, matches candidates with job descriptions, provides ATS scores.",
     tags: ["React", "FastAPI", "Python", "AI"],
     live: "#",

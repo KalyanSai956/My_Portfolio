@@ -3,6 +3,7 @@ import { useTheme } from "@/hooks/use-theme";
 import Navbar from "@/components/ui/Navbar";
 import attendAI from "@/assets/projects/attendAI.png";
 import carePlus from "@/assets/projects/carePlus.png";
+import SmartHire from "@/assets/projects/SmartHire.jpg";
 const CATEGORIES = [
   { label: "All", value: "all" },
   { label: "AIML", value: "aiml" },
@@ -15,13 +16,13 @@ const AIProjects = [
     image: attendAI,
     desc: "AI-powered smart attendance system that uses Face Recognition and Voice Recognition for secure attendance management.",
     tags: ["Python", "Streamlit", "FastAPI", "Supabase"],
-    live: "https://attend-ai-landing.vercel.app/", 
+    live: "https://attend-ai-landing.vercel.app/",
     github: "https://github.com/KalyanSai956/attendai-app",
     gradient: "from-blue-500/20 via-cyan-500/10 to-indigo-500/20",
   },
   {
     title: "SmartHire ATS",
-    image: attendAI,
+    image: SmartHire,
     desc: "AI-powered Applicant Tracking System that analyzes resumes, matches candidates with job descriptions, provides ATS scores.",
     tags: ["React", "FastAPI", "Python", "AI"],
     live: "#",
@@ -37,11 +38,10 @@ const AIProjects = [
     github: "https://github.com/yourusername/AIGymTrainer",
     gradient: "from-orange-500/20 via-red-500/10 to-yellow-500/20",
   },
-  
 ];
 
 const fullStackProjects = [
-    {
+  {
     title: "Care Plus",
     image: carePlus,
     desc: "Full-stack Pharmacy Management System for inventory management.",
@@ -172,7 +172,6 @@ export default function Projects() {
         {showAI && <ProjectGroup title="AI Projects" items={AIProjects} />}
         {showFullStack && <ProjectGroup title="Full-Stack Projects" items={fullStackProjects} />}
 
-
         {/* CTA */}
         <section className="mt-20 rounded-2xl border border-border bg-card/40 p-8 text-center">
           <span className="text-xs uppercase tracking-widest text-muted-foreground">
@@ -183,8 +182,8 @@ export default function Projects() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
             I'm available for freelance projects, consulting, and collaborations. Whether you need a
-            AI application, a full-stack application, or smart contract development, let's discuss how I
-            can help bring your vision to life.
+            AI application, a full-stack application, or smart contract development, let's discuss
+            how I can help bring your vision to life.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             <LinkBtn href="#">Book Free Consultation</LinkBtn>
