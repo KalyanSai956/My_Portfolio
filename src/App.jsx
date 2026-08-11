@@ -7,7 +7,7 @@ import { useTheme } from "@/hooks/use-theme";
 import GithubActivity from "@/components/ui/GithubActivity";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "@/components/ui/Navbar";
-import SmartHire from "@/assets/projects/SmartHire.jpg";
+import SmartHire from "@/assets/projects/SmartHire.png";
 const experiences = [
   {
     company: "Projxty",

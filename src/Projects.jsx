@@ -3,7 +3,7 @@ import { useTheme } from "@/hooks/use-theme";
 import Navbar from "@/components/ui/Navbar";
 import attendAI from "@/assets/projects/attendAI.png";
 import carePlus from "@/assets/projects/carePlus.png";
-import SmartHire from "@/assets/projects/SmartHire.jpg";
+import SmartHire from "@/assets/projects/SmartHire.png";
 const CATEGORIES = [
   { label: "All", value: "all" },
   { label: "AIML", value: "aiml" },
