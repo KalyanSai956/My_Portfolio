@@ -14,7 +14,7 @@ const experiences = [
     tag: "INTERNSHIP",
     role: "Web Developer",
     period: "Apr 2025 – Jul 2025",
-    desc: "Delivered high-quality, plagiarism-free food articles optimized for SEO, ensuring reader-friendly content through meticulous proofreading and keyword strategy.",
+    desc: "Developed responsive and reusable user interface components using React.js and JavaScript.Integrated backend APIs with Node.js and Express.js to enhance application functionality. Managed MongoDB databases for efficient data storage and retrieval, ensuring data integrity.Collaborated with a dynamic development team using Git and GitHub for version control and debugging.",
     initials: "S14",
     color: "bg-yellow-800/40 text-yellow-200",
   },
