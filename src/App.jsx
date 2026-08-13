@@ -8,15 +8,17 @@ import GithubActivity from "@/components/ui/GithubActivity";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "@/components/ui/Navbar";
 import SmartHire from "@/assets/projects/SmartHire.png";
+import Projxty from "@/assets/experience/company_projxty.png";
 const experiences = [
   {
     company: "Projxty",
     tag: "INTERNSHIP",
+    logo: Projxty,
     role: "Web Developer",
     period: "Apr 2025 – Jul 2025",
     desc: "Developed responsive and reusable user interface components using React.js and JavaScript.Integrated backend APIs with Node.js and Express.js to enhance application functionality. Managed MongoDB databases for efficient data storage and retrieval, ensuring data integrity.Collaborated with a dynamic development team using Git and GitHub for version control and debugging.",
     initials: "S14",
-    color: "bg-yellow-800/40 text-yellow-200",
+    color: "bg-white-800/40 text-yellow-200",
   },
 ];
 
@@ -246,9 +248,18 @@ function App() {
             {experiences.map((e) => (
               <li key={e.company} className="flex gap-4">
                 <div
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${e.color}`}
+                  className={`flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full text-xs font-semibold ${e.color}`}
                 >
-                  {e.initials}
+                  {e.logo ? (
+                    <img
+                      src={e.logo}
+                      alt={`${e.company} logo`}
+                      className="h-full w-full object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    e.initials
+                  )}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
