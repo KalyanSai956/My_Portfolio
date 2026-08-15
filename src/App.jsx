@@ -9,6 +9,23 @@ import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "@/components/ui/Navbar";
 import SmartHire from "@/assets/projects/SmartHire.png";
 import Projxty from "@/assets/experience/company_projxty.png";
+const education = [
+  {
+    institution: "Mohan Babu University, Tirupati",
+    degree: "Bachelor of Technology, CSE - AIML",
+    period: "Aug 2022 – May 2026",
+  },
+  {
+    institution: "Sastra Junior College",
+    degree: "BIEAP, Mathematics and Computer Science",
+    period: "Aug 2020 – May 2022",
+  },
+  {
+    institution: "Sri Chaitanya EM HS",
+    degree: "High School",
+    period: "Jul 2019 – Apr 2020",
+  },
+];
 const experiences = [
   {
     company: "Projxty",
@@ -37,7 +54,6 @@ const techStack = [
   { name: "Streamlit", icon: "streamlit", color: "FF4B4B" },
   { name: "Git", icon: "git", color: "F05032" },
   { name: "GitHub", icon: "github", color: "FFFFFF" },
-  { name: "VS Code", icon: "visualstudiocode", color: "007ACC" },
   { name: "Postman", icon: "postman", color: "FF6C37" },
   { name: "MySQL", icon: "mysql", color: "4479A1" },
   { name: "TensorFlow", icon: "tensorflow", color: "FF6F00" },
@@ -392,6 +408,47 @@ hover:border-foreground/30
           </div>
           <div className="mt-6">
             <LinkBtn href="/projects">View All Projects →</LinkBtn>
+          </div>
+        </Section>
+        {/* Education */}
+        <Section eyebrow="EDUCATION" subtitle="My academic journey.">
+          <div className="mt-6 space-y-0">
+            {education.map((e, index) => (
+              <div
+                key={e.institution}
+                className={`flex gap-4 py-5 ${
+                  index !== education.length - 1 ? "border-b border-border" : ""
+                }`}
+              >
+                {/* Education Icon */}
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border bg-muted/40">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="text-muted-foreground"
+                  >
+                    <path d="M2 10l10-5 10 5-10 5L2 10Z" />
+                    <path d="M6 12.5V17c3 2 9 2 12 0v-4.5" />
+                    <path d="M22 10v6" />
+                  </svg>
+                </div>
+
+                {/* Education Details */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                    <span className="font-medium text-foreground">{e.institution}</span>
+
+                    <span className="text-xs text-muted-foreground">{e.period}</span>
+                  </div>
+
+                  <p className="mt-1 text-sm text-muted-foreground">{e.degree}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </Section>
 
