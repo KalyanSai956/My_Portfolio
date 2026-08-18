@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
 import attendAI from "@/assets/projects/attendAI.png";
 // import smartHire from "@/assets/projects/smarthire.png";
 import carePlus from "@/assets/projects/carePlus.png";
@@ -10,6 +12,7 @@ import Navbar from "@/components/ui/Navbar";
 import SmartHire from "@/assets/projects/SmartHire.png";
 import Projxty from "@/assets/experience/company_projxty.png";
 import MeetMind from "@/assets/projects/MeetMind.png";
+
 const education = [
   {
     institution: "Mohan Babu University, Tirupati",
@@ -144,6 +147,24 @@ function LinkBtn({ href, children }) {
 
 function App() {
   const { theme, toggle } = useTheme();
+
+  const [visitorNumber, setVisitorNumber] = useState(null);
+
+  useEffect(() => {
+    const registerVisitor = async () => {
+      const { data, error } = await supabase.rpc("increment_visitor_count");
+
+      if (error) {
+        console.error("Visitor counter error:", error);
+        return;
+      }
+
+      setVisitorNumber(data);
+    };
+
+    registerVisitor();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
@@ -500,6 +521,12 @@ hover:border-foreground/30
               Twitter
             </a>
           </div>
+          {visitorNumber !== null && (
+            <p className="mt-5 text-xs text-muted-foreground">
+              👁️ You are the{" "}
+              <span className="font-semibold text-foreground">{visitorNumber}th</span> visitor
+            </p>
+          )}
         </footer>
       </main>
     </div>
