@@ -4,6 +4,7 @@ import Navbar from "@/components/ui/Navbar";
 import attendAI from "@/assets/projects/attendAI.png";
 import carePlus from "@/assets/projects/carePlus.png";
 import SmartHire from "@/assets/projects/SmartHire.png";
+import MeetMind from "@/assets/projects/MeetMind.png";
 const CATEGORIES = [
   { label: "All", value: "all" },
   { label: "AIML", value: "aiml" },
@@ -30,12 +31,12 @@ const AIProjects = [
     gradient: "from-violet-500/20 via-purple-500/10 to-fuchsia-500/20",
   },
   {
-    title: "AI Gym Trainer",
-    image: attendAI,
-    desc: "AI fitness assistant that analyzes workout posture using computer vision.",
-    tags: ["Python", "OpenCV", "MediaPipe", "AI"],
+    title: "MeetMind",
+    image: MeetMind,
+    desc: "MeetMind is an intelligent team meeting and collaboration platform that helps teams organize meetings, manage workspaces, and understand meeting engagement through AI-powered focus detection.",
+    tags: ["Python", "AI"],
     live: "#",
-    github: "https://github.com/yourusername/AIGymTrainer",
+    github: "https://github.com/KalyanSai956/meetmind",
     gradient: "from-orange-500/20 via-red-500/10 to-yellow-500/20",
   },
 ];

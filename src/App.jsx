@@ -9,6 +9,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "@/components/ui/Navbar";
 import SmartHire from "@/assets/projects/SmartHire.png";
 import Projxty from "@/assets/experience/company_projxty.png";
+import MeetMind from "@/assets/projects/MeetMind.png";
 const education = [
   {
     institution: "Mohan Babu University, Tirupati",
@@ -81,6 +82,15 @@ const projects = [
     gradient: "from-violet-500/20 via-purple-500/10 to-fuchsia-500/20",
   },
   {
+    title: "MeetMind",
+    image: MeetMind,
+    desc: "MeetMind is an intelligent team meeting and collaboration platform that helps teams organize meetings, manage workspaces, and understand meeting engagement through AI-powered focus detection.",
+    tags: ["Python", "AI"],
+    live: "#",
+    github: "https://github.com/KalyanSai956/meetmind",
+    gradient: "from-orange-500/20 via-red-500/10 to-yellow-500/20",
+  },
+  {
     title: "Care Plus",
     image: carePlus,
     desc: "Full-stack Pharmacy Management System for inventory management.",
@@ -88,15 +98,6 @@ const projects = [
     live: "https://care-plus-frontend.vercel.app/",
     github: "https://github.com/KalyanSai956/care-plus-backend",
     gradient: "from-emerald-500/20 via-green-500/10 to-teal-500/20",
-  },
-  {
-    title: "AI Gym Trainer",
-    image: attendAI,
-    desc: "AI fitness assistant that analyzes workout posture using computer vision.",
-    tags: ["Python", "OpenCV", "MediaPipe", "AI"],
-    live: "#",
-    github: "https://github.com/yourusername/AIGymTrainer",
-    gradient: "from-orange-500/20 via-red-500/10 to-yellow-500/20",
   },
 ];
 
@@ -328,7 +329,7 @@ hover:text-white
           </div>
         </Section>
 
-        {/* <GithubActivity /> */}
+        <GithubActivity />
 
         {/* Featured Projects */}
         <Section eyebrow="FEATURED PROJECTS" subtitle="Things I've built and shipped.">
