@@ -12,22 +12,28 @@ import Navbar from "@/components/ui/Navbar";
 import SmartHire from "@/assets/projects/SmartHire.png";
 import Projxty from "@/assets/experience/company_projxty.png";
 import MeetMind from "@/assets/projects/MeetMind.png";
+import MBULogo from "./assets/education/MBU.jpg";
+import SastraLogo from "./assets/education/Sastra.png";
+import SriChaitanyaLogo from "./assets/education/Sri_Chaitanya.png";
 
 const education = [
   {
-    institution: "Mohan Babu University, Tirupati",
-    degree: "Bachelor of Technology, CSE - AIML",
-    period: "Aug 2022 – May 2026",
+    institution: "Mohan Babu University",
+    degree: "B.Tech in Computer Science & Engineering - 8.98 CGPA",
+    period: "2022 – 2026",
+    logo: MBULogo,
   },
   {
     institution: "Sastra Junior College",
-    degree: "BIEAP, Mathematics and Computer Science",
-    period: "Aug 2020 – May 2022",
+    degree: "Intermediate - 93.8%",
+    period: "2020 – 2022",
+    logo: SastraLogo,
   },
   {
-    institution: "Sri Chaitanya EM HS",
-    degree: "High School",
-    period: "Jul 2019 – Apr 2020",
+    institution: "Sri Chaitanya EM High School",
+    degree: "Secondary School Certificate - 98.9%",
+    period: "2020",
+    logo: SriChaitanyaLogo,
   },
 ];
 const experiences = [
@@ -432,6 +438,7 @@ hover:border-foreground/30
             <LinkBtn href="/projects">View All Projects →</LinkBtn>
           </div>
         </Section>
+
         {/* Education */}
         <Section eyebrow="EDUCATION" subtitle="My academic journey.">
           <div className="mt-6 space-y-0">
@@ -442,21 +449,13 @@ hover:border-foreground/30
                   index !== education.length - 1 ? "border-b border-border" : ""
                 }`}
               >
-                {/* Education Icon */}
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border bg-muted/40">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    className="text-muted-foreground"
-                  >
-                    <path d="M2 10l10-5 10 5-10 5L2 10Z" />
-                    <path d="M6 12.5V17c3 2 9 2 12 0v-4.5" />
-                    <path d="M22 10v6" />
-                  </svg>
+                {/* Institution Logo */}
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-white">
+                  <img
+                    src={e.logo}
+                    alt={`${e.institution} logo`}
+                    className="h-full w-full object-contain p-1"
+                  />
                 </div>
 
                 {/* Education Details */}
