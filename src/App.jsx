@@ -75,7 +75,7 @@ const projects = [
   {
     title: "AttendAI",
     image: attendAI,
-    desc: "AI-powered smart attendance system that uses Face Recognition and Voice Recognition for secure attendance management.",
+    desc: "AI-powered smart attendance system that uses Face Recognition and Voice Recognition.",
     tags: ["Python", "Streamlit", "FastAPI", "Supabase"],
     live: "https://attend-ai-landing.vercel.app/", // Add deployed URL if available
     github: "https://github.com/KalyanSai956/attendai-app",
@@ -84,7 +84,7 @@ const projects = [
   {
     title: "SmartHire ATS",
     image: SmartHire,
-    desc: "AI-powered Applicant Tracking System that analyzes resumes, matches candidates with job descriptions, provides ATS scores.",
+    desc: "AI-powered Applicant Tracking System that analyzes resumes.",
     tags: ["React", "FastAPI", "Python", "AI"],
     live: "#",
     github: "https://github.com/yourusername/SmartHireATS",
@@ -93,7 +93,7 @@ const projects = [
   {
     title: "MeetMind",
     image: MeetMind,
-    desc: "MeetMind is an intelligent team meeting and collaboration platform that helps teams organize meetings, manage workspaces, and understand meeting engagement through AI-powered focus detection.",
+    desc: "MeetMind is an intelligent team meeting and collaboration platform.",
     tags: ["Python", "AI"],
     live: "#",
     github: "https://github.com/KalyanSai956/meetmind",

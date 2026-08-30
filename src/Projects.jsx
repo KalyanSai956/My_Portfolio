@@ -173,27 +173,8 @@ export default function Projects() {
         {showAI && <ProjectGroup title="AI Projects" items={AIProjects} />}
         {showFullStack && <ProjectGroup title="Full-Stack Projects" items={fullStackProjects} />}
 
-        {/* CTA */}
-        <section className="mt-20 rounded-2xl border border-border bg-card/40 p-8 text-center">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">
-            Freelance &amp; Collaboration
-          </span>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Ready to Build Something Great?
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            I'm available for freelance projects, consulting, and collaborations. Whether you need a
-            AI application, a full-stack application, or smart contract development, let's discuss
-            how I can help bring your vision to life.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-2">
-            <LinkBtn href="#">Book Free Consultation</LinkBtn>
-            <LinkBtn href="mailto:kalyansai956@gmail.com">Send an Email</LinkBtn>
-          </div>
-        </section>
-
         <footer className="mt-16 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()}Pasupuleti Sai Kalyan</p>
+          <p>© {new Date().getFullYear()} Pasupuleti Sai Kalyan</p>
           <div className="mt-3 flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/KalyanSai956"
