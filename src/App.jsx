@@ -50,7 +50,7 @@ const experiences = [
     logo: Projxty,
     role: "Web Developer",
     period: "Apr 2025 – Jul 2025",
-    desc: "Developed responsive and reusable user interface components using React.js and JavaScript. Integrated backend APIs with Node.js and Express.js to enhance application functionality. Managed MongoDB databases for efficient data storage and retrieval, ensuring data integrity. Collaborated with a dynamic development team using Git and GitHub for version control and debugging.",
+    desc: "Developed responsive and reusable user interface components using React.js and JavaScript. Integrated backend APIs with Node.js and Express.js to enhance application functionality.",
     initials: "S14",
     color: "bg-white-800/40 text-yellow-200",
   },
@@ -495,7 +495,7 @@ function App() {
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="font-medium text-foreground">{e.company}</span>
+                      <span className="font-large text-foreground">{e.company}</span>
 
                       <Chip>{e.tag}</Chip>
                     </div>
@@ -503,9 +503,9 @@ function App() {
                     <span className="text-xs text-muted-foreground">{e.period}</span>
                   </div>
 
-                  <p className="mt-1 text-sm text-muted-foreground">{e.role}</p>
+                  <p className="mt-1 text-xm text-muted-foreground">{e.role}</p>
 
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground/90">{e.desc}</p>
+                  <p className="mt-2 text-xm leading-relaxed text-muted-foreground/90">{e.desc}</p>
                 </div>
               </li>
             ))}
