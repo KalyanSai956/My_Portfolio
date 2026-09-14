@@ -4,11 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 @theme inline {
   /* Fonts */
---font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
---font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   /* Theme Colors */
   --color-background: var(--background);
@@ -44,16 +43,16 @@
 /* ---------- Dark Theme ---------- */
 
 .dark {
-  --background: #09090b;
+  --background: #171717;
   --foreground: #fafafa;
 
-  --card: #111113;
+  --card: #1f1f1f;
   --card-foreground: #fafafa;
 
-  --muted: #18181b;
-  --muted-foreground: #a1a1aa;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
 
-  --border: #27272a;
+  --border: #303030;
 
   --accent-green: #22c55e;
 }
@@ -70,64 +69,67 @@
     scroll-behavior: smooth;
   }
 
-body {
-  margin: 0;
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: -0.01em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
+  body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-}
-.tech-badge {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .tech-badge {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
 
   img {
     display: block;
     max-width: 100%;
   }
 
-button,
-a,
-input,
-textarea {
-  font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 500;
-}
-p {
-  color: var(--color-muted-foreground);
-}
-code {
-  font-family: var(--font-mono);
-  font-size: 13px;
-}
+  button,
+  a,
+  input,
+  textarea {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  p {
+    color: var(--color-muted-foreground);
+  }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
 
   ::selection {
     background: #2563eb;
     color: white;
   }
 
-  /* Scrollbar */
+  /* ---------- Scrollbar ---------- */
 
   ::-webkit-scrollbar {
     width: 8px;

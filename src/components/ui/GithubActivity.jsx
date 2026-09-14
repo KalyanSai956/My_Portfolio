@@ -12,11 +12,7 @@ export default function GithubActivity() {
     });
 
   return (
-    <section id="github" className="mt-20">
-      <div className="mb-10">
-        <h2 className="mt-2 text-3xl font-bold">My Daily Contributions</h2>
-      </div>
-
+    <section id="github" className="mt-20" eyebrow="EDUCATION">
       <div
         className="          
           
@@ -27,9 +23,9 @@ export default function GithubActivity() {
         <GitHubCalendar
           username="KalyanSai956"
           colorScheme="dark"
-          blockSize={11}
-          blockMargin={3}
-          fontSize={12}
+          blockSize={14}
+          blockMargin={5}
+          fontSize={17}
           showWeekdayLabels
           transformData={filterToJuneDec}
         />
