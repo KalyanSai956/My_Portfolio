@@ -27,13 +27,13 @@
 
 :root {
   --background: #fafafa;
-  --foreground: #18181b;
+  --foreground: #000000;
 
   --card: #ffffff;
-  --card-foreground: #18181b;
+  --card-foreground: #000000;
 
   --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  --muted-foreground: #010103;
 
   --border: #e4e4e7;
 
@@ -43,7 +43,7 @@
 /* ---------- Dark Theme ---------- */
 
 .dark {
-  --background: #171717;
+  --background: #000000;
   --foreground: #fafafa;
 
   --card: #1f1f1f;
@@ -140,11 +140,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #3f3f46;
+    background: #030307;
     border-radius: 999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #52525b;
+    background: #000000;
   }
 }
