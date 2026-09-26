@@ -65,7 +65,6 @@ const techStack = [
   { name: "CSS3", icon: "css", color: "1572B6" },
   { name: "React", icon: "react", color: "61DAFB" },
   { name: "Bootstrap", icon: "bootstrap", color: "7952B3" },
-  { name: "Vite", icon: "vite", color: "646CFF" },
   { name: "Node.js", icon: "nodedotjs", color: "5FA04E" },
   { name: "Express.js", icon: "express", color: "FFFFFF" },
   { name: "MongoDB", icon: "mongodb", color: "47A248" },
