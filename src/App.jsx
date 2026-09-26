@@ -97,7 +97,7 @@ const projects = [
     desc: "AI-powered Applicant Tracking System that analyzes resumes.",
     tags: ["React", "FastAPI", "Python", "AI"],
     live: "#",
-    github: "https://github.com/yourusername/SmartHireATS",
+    github: "https://github.com/KalyanSai956/SmartHireATS",
     gradient: "from-violet-500/20 via-purple-500/10 to-fuchsia-500/20",
   },
   {
