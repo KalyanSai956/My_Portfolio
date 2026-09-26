@@ -224,7 +224,7 @@ function App() {
             />
 
             <div className="min-w-0 flex-1">
-              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h1 className="text-2xl font-semibold tracking-tight sm:text-2xl">
                 Pasupuleti Sai Kalyan
               </h1>
 
