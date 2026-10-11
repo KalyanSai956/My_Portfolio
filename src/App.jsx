@@ -96,7 +96,7 @@ const projects = [
     image: SmartHire,
     desc: "AI-powered Applicant Tracking System that analyzes resumes.",
     tags: ["React", "FastAPI", "Python", "AI"],
-    live: "#",
+    live: "https://smarthirework.vercel.app/",
     github: "https://github.com/KalyanSai956/SmartHireATS",
     gradient: "from-violet-500/20 via-purple-500/10 to-fuchsia-500/20",
   },
